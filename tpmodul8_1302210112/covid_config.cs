@@ -35,8 +35,7 @@ namespace tpmodul8_1302210112
 
         }
 
-        // Meminta user untuk memasukan suhu dan hari demam
-        // Lalu panggil method CekSuhu
+        
         public void MasukGedung()
         {
             Console.WriteLine($"\nBerapa suhu badan anda saat ini ? Dalam nilai {SatuanSuhu}");
@@ -58,9 +57,7 @@ namespace tpmodul8_1302210112
             CekSuhu(suhu, hariDemam);
         }
 
-        // Cek jika suhu diantara kententuan satuan & jika hari demam < property BatasHariDemam
-        // Mengeluarkan output property PesanDitolak jika pengecekan adalah false
-        // Mengeluarkan output property PesanDiterima jika pengecekan adalah true
+        
         public void CekSuhu(float suhu, int hariDemam)
         {
             bool suhuPass;
@@ -89,7 +86,7 @@ namespace tpmodul8_1302210112
             }
         }
 
-        // Ubah satuan dengan string
+        
         public Suhu UbahSatuan(string satuanSuhu)
         {
             Suhu satuan;
@@ -102,7 +99,7 @@ namespace tpmodul8_1302210112
             return UbahSatuan(satuan);
         }
 
-        // Ubah satuan dengan enum
+   
         public Suhu UbahSatuan(Suhu satuan)
         {
             SatuanSuhu = satuan;
